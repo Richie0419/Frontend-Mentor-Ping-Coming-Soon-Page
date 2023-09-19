@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    /* Primary */
+    --Blue: hsl(223, 87%, 63%);
+
+   /* Secondary */
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+
+    /* Neutral */
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container{
+    max-width: 900px;
+    margin:  0 auto;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 3rem;
+}
+
+.title{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2.2rem;
+}
+
+.title span{
+    color: var(--Gray);
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.sub-title{
+   font-size: 1.2rem;
+   margin-top: -0.5rem;
+   font-weight: 400;
+}
+
+form input{
+    outline: 0;
+    border-radius: 50px;
+    border: 1px solid var(--Gray);
+    width: 30%;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+}
+
+.error-msg{
+    color: var(--LightRed);
+    font-size: 0.8rem;
+    margin-left: -15rem;
+    display: none;
+}
+
+.sub-btn{
+    background: var(--Blue);
+    border: 0;
+    outline: 0;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sub-btn:hover{
+    background: var(--PaleBlue);
+}
+
+.error-input {
+    border-color: red;
+}
+
+.hero-img img{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.social-media{
+    margin-top: 3rem;
+}
+
+.social-media img{
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.copyright p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 530px){
+    .title{
+        font-weight: 1rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    form input{
+        width: auto;
+        margin-bottom: 1rem;
+    }
+
+    .sub-btn{
+        margin-left: 0;
+        margin-top: 1.2rem;
+    }
+
+    .error-msg{
+        margin-top: -4.4rem;
+        margin-left: -10rem;
+        display: block;
+    }
+}
